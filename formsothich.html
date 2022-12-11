@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form sở thích và đăng ký</title>
+    <style>
+        .flex-container{
+            width:400px;
+            margin:auto;
+            padding:10px;
+
+        }
+        .title{
+            background-color:red;
+            color:white;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 2em;
+        }
+        label{
+            color:blue;
+            cursor: pointer;
+            padding:6px;
+        }
+        span{
+            color: orange;
+            margin: 4px;
+        }
+        button{
+            margin:4px;
+            padding:4px;
+        }
+        .personalDetail input {
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="title">
+            <h4>Sở thích của bạn</h4>
+        </div>
+        
+        <div class="personalDetail">
+            <table>
+                <tr>
+                    <td><label for="name">Họ và tên</label></td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="hobbie">
+            <table>
+                <tr>
+                    <td><label for="sothich">Sở thích</label></td>
+                    <td><input type="checkbox" id="sport" name="sport" value="sport"><span>Thể thao</span>                  
+                    </td>
+                    <td><input type="checkbox" id="music" name="music" value="music"><span>Âm nhạc</span></td>
+                    <td><input type="checkbox" id="reading" name="reading" value="reading"><span>Đọc sách</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="surfing web" name="surfing web" value="surfing web"><span>Lướt web</span></td>
+                    <td><input type="checkbox" id="gaming" name="gaming" value="gaming"><span>Chơi game</span></td>
+                    <td><input type="checkbox" id="film" name="film" value="film"><span>Điện Ảnh</span> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="travel" name="travel" value="travel"><span>Du lịch</span></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Gửi thông tin</button></td>
+                    <td><button type="reset">Nhập lại</button></td>
+                    <td></td>
+                </tr>
+            </table>                  
+        </div>
+        
+    </div>
+
+</body>
+</html>

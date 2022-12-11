@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form đăng ký</title>
+    <style>
+        html{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .dangky{
+            background-color: bisque;
+            width:500px;
+            margin:auto;
+        }
+        .dangky--container{
+            padding:1px 5px;
+        }
+        .dangky_title{
+            background-color:aqua;
+        }
+        .dangky_title h2{
+            
+            text-transform: uppercase;
+            color:blue;
+        }
+        label{
+            color:rgb(45, 186, 233);
+            margin-right:10px;
+        }
+        input, textarea{
+            padding:3px;
+            margin-bottom:5px;
+            border-radius: 5px;
+
+        }
+        button{
+            padding:4px;
+            margin:2px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="dangky">
+        <div class="dangky--container">
+            <div class="dangky_title">
+                <h2>đăng ký học viên</h2>
+            </div>
+            <form action="" class="dangky_container">
+                <table>
+                    <tr>
+                        <td><label for="name">Họ và tên</label></td>
+                        <td><input type="text" name="name" size="15" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dateOfBirth">Ngày sinh</label></td>
+                        <td><input type="date" name="dateOfBirth" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Giới tính</label></td>
+                        <td>
+                            <input type="radio" name="gender" value="1" checked />Nam
+                            <input type="radio" name="gender" />Nữ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Địa chỉ</label></td>
+                        <td><textarea name="address" id="address" cols="20" rows="2"
+                                placeholder="Điền địa chỉ của bạn"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="class">Lớp</label></td>
+                        <td><select name="class" id="class">
+                                <option value="Chọn lớp">--Chọn Lớp--</option>
+                                <option value="math">Toán</option>
+                                <option value="chemistry">Hoá</option>
+                                <option value="physic">Lý</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Điện thoại</label></td>
+                        <td><input type="number" name="phone" placeholder="Phone number" size="11"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">Đắng Ký</button> <button type="reset">Nhập Lại</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
